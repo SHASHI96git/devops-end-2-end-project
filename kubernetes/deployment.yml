@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci-demo-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ci-demo
+  template:
+    metadata:
+      labels:
+        app: ci-demo
+    spec:
+      containers:
+      - name: ci-demo-container
+        image: shashi96git/ci-demo-app:v1
+        ports:
+        - containerPort: 80
