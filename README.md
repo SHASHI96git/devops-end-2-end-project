@@ -50,7 +50,7 @@ and monitoring using industry-standard tools.
 
 ---
 
-## nfrastructure as Code (Terraform)
+## Infrastructure as Code (Terraform)
 - Terraform provisions AWS EC2 instance and Security Groups
 - Infrastructure changes are version controlled
 
